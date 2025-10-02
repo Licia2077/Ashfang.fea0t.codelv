@@ -1,0 +1,226 @@
+/* ============================= */
+/* 전체 레이아웃 */
+/* ============================= */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", "Noto Sans JP", Arial, sans-serif;
+  background: #f5f7fa;
+  color: #111;
+}
+
+.app-root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.subtitle {
+  margin: 6px 0 18px 0;
+  color: #666;
+}
+
+/* ============================= */
+/* 섹션 공통 */
+/* ============================= */
+.section {
+  margin-top: 30px;
+}
+
+.section h2 {
+  margin: 0 0 14px 0;
+  font-size: 20px;
+}
+
+/* ============================= */
+/* 포켓몬 카드 (4x4 그리드) */
+/* ============================= */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@keyframes hover-bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.card {
+  background: linear-gradient(180deg, #ffffff, #fbfbfd);
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(14, 30, 60, 0.08);
+  padding: 14px;
+  text-align: center;
+  cursor: pointer;
+  will-change: transform;
+  transition: box-shadow 0.18s ease;
+}
+
+.card:hover {
+  animation: hover-bounce 220ms ease-out;
+  box-shadow: 0 10px 26px rgba(14, 30, 60, 0.12);
+}
+
+.poke-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+
+.names .kr {
+  font-size: 18px;
+  margin: 4px 0;
+  font-weight: 700;
+}
+
+.subnames {
+  display: flex;
+  justify-content: center;
+  color: #0073e6;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.names .jp {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* 상세 설명은 항상 숨김 */
+.detail {
+  display: none !important;
+}
+
+/* ============================= */
+/* 트레이너 카드 (4x4 그리드) */
+/* ============================= */
+.trainer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.trainer-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(10, 20, 40, 0.06);
+  padding: 18px;
+  text-align: center;
+  cursor: pointer;
+  will-change: transform;
+  transition: box-shadow 0.18s ease;
+}
+
+.trainer-card:hover {
+  animation: hover-bounce 220ms ease-out;
+  box-shadow: 0 10px 24px rgba(14, 30, 60, 0.12);
+}
+
+.trainer-profile {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 4px solid #e5e7eb;
+  margin: 0 auto 12px auto;
+}
+
+.trainer-names .kr {
+  font-size: 18px;
+  margin: 6px 0;
+  font-weight: 700;
+}
+
+.trainer-names .jp {
+  font-size: 13px;
+  color: #555;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.trainer-names .en {
+  font-size: 13px;
+  font-style: italic;
+  color: #0073e6;
+}
+
+/* 상세 설명은 항상 숨김 */
+.trainer-detail {
+  display: none !important;
+}
+
+.trainer-pokemon img {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+  margin-top: 8px;
+}
+
+/* ============================= */
+/* 소개 카드 중앙 정렬 */
+/* ============================= */
+.intro-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(14, 30, 60, 0.08);
+}
+
+/* ============================= */
+/* 화살표 버튼 */
+/* ============================= */
+.nav-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-btn {
+  background: #f5f5f5;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #e0e0e0;
+  transform: scale(1.1);
+}
+
+/* 소개 카드 안 프로필 이미지 */
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e5e7eb;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 소개 카드 안 텍스트 */
+
+.intro-text p {
+  margin: 10px 0;
+}
+
+/* 강조 */
+.highlight {
+  color: #0073e6;
+  font-weight: 600;
+}
