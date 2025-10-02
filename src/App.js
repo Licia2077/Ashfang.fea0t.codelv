@@ -60,25 +60,25 @@ function App() {
   // 트레이너 리스트
   const [trainerList] = useState([
     {
-      id: "t6", krName: "구즈마", enName: "Guzma", JpName: "グズマ", mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/768.gif", profileImg: GuzmaImg
+      id: "t6", krName: "구즈마", enName: "Guzma", JpName: "グズマ", profileImg: GuzmaImg
     },
     {
-      id: "t7", krName: "나누", enName: "Nanu", JpName: "クチナシ", mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/863.gif", profileImg: NanuImg
+      id: "t7", krName: "나누", enName: "Nanu", JpName: "クチナシ", profileImg: NanuImg
     },
     {
-      id: "t4", krName: "하행", enName: "Emmet", JpName: "クダリ", mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png", profileImg: EmmetImg
+      id: "t4", krName: "하행", enName: "Emmet", JpName: "クダリ", profileImg: EmmetImg
     },
     {
-      id: "t3", krName: "상행", enName: "Ingo", JpName: "ノボリ", mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/768.png", profileImg: IngoImg
+      id: "t3", krName: "상행", enName: "Ingo", JpName: "ノボリ", profileImg: IngoImg
     },
     {
-      id: "t1", krName: "금랑", enName: "Raihan", JpName: "キバナ", mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/884.png", profileImg: RaihanImg
+      id: "t1", krName: "금랑", enName: "Raihan", JpName: "キバナ", profileImg: RaihanImg
     },
     {
-      id: "t2", krName: "순무", enName: "Kabu", JpName: "カブ", mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/851.png", profileImg: KabuImg
+      id: "t2", krName: "순무", enName: "Kabu", JpName: "カブ", profileImg: KabuImg
     },
     {
-      id: "t8", krName: "찬석", enName: "Adaman", JpName: "セキ", mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png", profileImg: AdamanImg
+      id: "t8", krName: "찬석", enName: "Adaman", JpName: "セキ", profileImg: AdamanImg
     },
     {
       id: "t5", krName: "청목", enName: "Larry", JpName: "アオキ", profileImg: LarryImg
