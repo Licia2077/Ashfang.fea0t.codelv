@@ -25,3 +25,10 @@ yarn-error.log*
 # VSCode / Cursor Editor 확장 캐시
 .cursor/
 
+# Android/Gradle
+.android/
+.cache/
+*.gradle
+
+# Cursor/VSCode 캐시
+.cursor/
